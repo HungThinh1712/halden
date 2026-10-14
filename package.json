@@ -1,0 +1,18 @@
+{
+  "name": "halden",
+  "private": true,
+  "workspaces": [
+    "apps/store",
+    "apps/admin"
+  ],
+  "scripts": {
+    "dev:store": "npm run dev -w @halden/store",
+    "dev:admin": "npm run dev -w @halden/admin",
+    "build": "npm run build -w @halden/store && npm run build -w @halden/admin",
+    "preview:store": "npm run preview -w @halden/store",
+    "preview:admin": "npm run preview -w @halden/admin"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
